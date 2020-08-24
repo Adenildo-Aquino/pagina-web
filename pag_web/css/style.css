@@ -1,0 +1,295 @@
+body{
+	font-family:'Nunito', sans-serif;
+	color: #1C1C1C;
+}
+h1, h2, h3{
+	font-family:'Asap', sans-serif;
+	color: #000000;
+}
+.botao{
+	color: #111111;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #BB59BB;
+	font-size: .9em;
+	border-radius: 10px;
+}
+
+/*  Navegação   */
+
+nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FFE42B;
+}
+
+nav > a {
+	text-decoration: none;
+	color: #111111;
+	font-weight: 800;
+	font-size: 50px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+nav ul li{
+	text-align: center;
+	width: 100%;
+}
+nav ul li a {
+
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration:none;
+	color: #111111;
+}
+
+/*  cabeçalho   */
+
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("../img/concerto.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #000000;
+	text-align: center;
+	padding: 20px;
+}
+header h1{
+	color: #212121;
+}
+header p{
+	margin-bottom: 2em;
+}
+#topo h1{
+	font-size: 3em;
+	text-shadow: #FFE42B 2px 5px;
+}
+#agenda{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px 10px 20px 20px;
+	background-color: #FFE42B;
+	color: #111111;
+}
+#agenda h2{
+	color: #111111;
+}
+#agenda p{
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+	text-align: center;
+}
+#agenda .botao{
+	background-color: #697181;
+	color: #1c1c1c;
+}
+
+/*   tabela    */
+
+.content{
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.rtable{
+	width: 100%; 
+	text-align: center; 
+	border-radius: 10px;
+	padding: 0;
+	margin: 0;
+}
+.rtable thead{
+	background: black;
+	font-weight: bold;
+	color: #ffffff;
+	}
+.rtable tbody{
+	border-collapse: collapse; /* CSS2 */
+    background: #FFFFF0;
+    border: dashed red 1px; /* Precedência tem bug no IE */
+}
+
+.rtable th .rtable td{
+	padding: 7px 0;
+}
+
+@media screen and (max-width: 480px){
+.content{
+	width: 94%;
+}
+.rtable thead{
+	display: none;
+}
+.rtable tbody td{
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+}
+@media only screen and (min-width:1200px){
+
+.content{
+ 	width:100%;
+ }
+
+
+
+ }
+
+/*   biografia   */
+
+#biografia{
+	display: block;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+}
+#biografia div{
+	display: block;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+#paragrafo{
+	text-align: justify;
+}
+
+/* fotos  */
+
+#fotos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+}
+#fotos h2{
+	margin-bottom: 20px;
+	text-align: center;
+}
+#fotos img{
+	width: 100%
+}
+
+/*   contato   */
+
+#contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+#contato h2{
+	color: #000000;
+}
+#contato div p a{
+	text-decoration: none;
+}
+
+/*  rodapé   */
+
+footer{
+	text-align: center;
+	padding: 10px;
+	background-color: #FFE42B;
+	content: #111111;
+}
+footer a{
+	text-decoration: none;
+	color: #111111;
+}
+
+@media screen and (min-width: 768px){
+
+	/* nav */
+
+	nav{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	nav ul{
+		flex-direction: row;
+		width: 70%;
+	}
+
+	/* cabeçalho */
+
+	header{
+		height: 600px;
+		height: 60vh;
+		justify-content: center;
+	}
+
+	/* agenda */
+
+	#agenda{
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-width: 250px;
+	}
+
+	/*  biografia  */
+
+	#biografia{
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	#biografia h2{
+		text-align: center;
+		width: 100%;
+	}
+	#biografia div{
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+
+	/*  fotos  */
+
+	#fotos{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#fotos h2{
+		width: 100%;
+		text-align: center;
+	}
+	#fotos img{
+		width: 33.3333333%;
+	}
+
+	/* contato */
+
+	#contato{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	#contato h2, #contato p{
+		width: 100%;
+	}
+}
