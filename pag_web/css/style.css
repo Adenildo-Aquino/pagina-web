@@ -75,7 +75,7 @@ header p{
 }
 #topo h1{
 	font-size: 3em;
-	text-shadow: #FFE42B 2px 5px;
+	text-shadow: #FFE42B 1px 2px;
 }
 #agenda{
 	display: flex;
@@ -148,9 +148,6 @@ header p{
 .content{
  	width:100%;
  }
-
-
-
  }
 
 /*   biografia   */
